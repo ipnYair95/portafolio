@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'portafolio';
+
+  mostrar = false;
+
+  constructor(){
+    setTimeout(() => {
+      this.mostrar = true;
+    }, 5000);
+  }
+  
 }

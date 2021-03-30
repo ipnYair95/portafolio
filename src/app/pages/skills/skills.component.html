@@ -1,0 +1,66 @@
+<mat-tab-group mat-stretch-tabs>
+
+    <mat-tab label="FRONT-END">
+
+        <div class="container">
+            <div *ngFor="let skill of skillsDev" style="margin-top: 1rem;">
+                <button [matTooltip]="skill.herramientas" matTooltipClass="example-tooltip-red"
+                    class="btn btn-outline-success mb-1">
+                    {{ skill.nombre }}
+                </button>
+                <mat-progress-bar mode="determinate" [value]="skill.nivel">
+
+                </mat-progress-bar>
+            </div>
+        </div>
+
+    </mat-tab>
+    <mat-tab label="BACK-END">
+
+        <div class="container">
+            <div *ngFor="let skill of skillsBack" style="margin-top: 1rem;">
+                <button [matTooltip]="skill.herramientas" matTooltipClass="example-tooltip-red"
+                    class="btn btn-outline-success mb-1">
+                    {{ skill.nombre }}
+                </button>
+                <mat-progress-bar mode="determinate" [value]="skill.nivel">
+
+                </mat-progress-bar>
+            </div>
+        </div>
+
+    </mat-tab>
+
+    <mat-tab label="HERRAMIENTAS">
+
+        <div class="container">
+            <div *ngFor="let skill of skillsTools" style="margin-top: 1rem;">
+                <button [matTooltip]="skill.herramientas" matTooltipClass="example-tooltip-red"
+                    class="btn btn-outline-success mb-1">
+                    {{ skill.nombre }}
+                </button>
+                <mat-progress-bar mode="determinate" [value]="skill.nivel">
+
+                </mat-progress-bar>
+            </div>
+        </div>
+
+    </mat-tab>
+
+    <mat-tab label="OTROS CONOCIMIENTOS">
+
+        <div class="container">
+            <div *ngFor="let skill of skillOther" style="margin-top: 1rem;">
+                <button [matTooltip]="skill.herramientas" matTooltipClass="example-tooltip-red"
+                    class="btn btn-outline-success mb-1">
+                    {{ skill.nombre }}
+                </button>
+                <mat-progress-bar mode="determinate" [value]="skill.nivel">
+
+                </mat-progress-bar>
+            </div>
+        </div>
+
+    </mat-tab>
+
+</mat-tab-group>

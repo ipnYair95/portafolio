@@ -1,0 +1,107 @@
+<div class="container-lg my-3">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+        <!-- Wrapper for carousel items -->
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+
+                <div style="text-align: center;">
+                    <div class="card border-primary">
+                        <div class="row">
+                            <div class="col title" style="color: blue; ">
+                                <b> {{ experiencias[0].lugar }} | {{ experiencias[0].fecha }} </b>
+                            </div>
+                        </div>
+                        <div>
+                            <hr style="text-align: center; width: 80%;">
+                        </div>
+                        <div class="row">
+                            <div class="col title">
+                                <b>
+                                    <u>
+                                        <p> {{ experiencias[0].puesto | uppercase }} </p>
+                                    </u>
+                                </b>
+                                <p> {{ experiencias[0].tipo }} </p>
+                            </div>
+                            <div class="col" style="text-align: justify !important;">
+                                {{ experiencias[0].exp }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="carousel-item" *ngFor="let experiencia of experiencias.slice(1)">
+
+                <div style="text-align: center;">
+
+                    <div class="card border-primary">
+                        <div class="row">
+                            <div class="col title" style="color: blue; ">
+                                <b> {{ experiencia.lugar }} | {{ experiencia.fecha }} </b>
+                            </div>
+                        </div>
+                        <div>
+                            <hr style="text-align: center; width: 80%;">
+                        </div>
+                        <div class="row" >
+                            <div class="col title">
+                                <b>
+                                    <u>
+                                        <p> {{ experiencia.puesto | uppercase }} </p>
+                                    </u>
+                                </b>
+                                <p> {{ experiencia.tipo }} </p>
+                            </div>
+                            <div class="col" style="text-align: justify !important;">
+                                {{ experiencia.exp }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+        <!-- Carousel controls -->
+        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+</div>
+<!-- 
+<div class="flex">
+
+    <div class="card border-primary" *ngFor="let experiencia of experiencias">
+        <div class="row">
+            <div class="col title" style="margin: 1rem 0rem 0rem; color: blue; ">
+                <b> {{ experiencia.lugar }} | {{ experiencia.fecha }} </b>
+            </div>
+        </div>
+        <div>
+            <hr style="text-align: center; width: 80%;">
+        </div>
+        <div class="row" style="padding: 0rem 1rem;">
+            <div class="col title">
+                <b>
+                    <u>
+                        <p> {{ experiencia.puesto | uppercase }} </p>
+                    </u>
+                </b>
+                <p> {{ experiencia.tipo }} </p>
+            </div>
+            <div class="col" style="text-align: justify !important;">
+                {{ experiencia.exp }}
+            </div>
+        </div>
+    </div>
+
+</div> -->

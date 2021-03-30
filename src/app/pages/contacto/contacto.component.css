@@ -1,0 +1,165 @@
+.contenedor {
+  background: url(../../../assets/fondo2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 102%;
+  height: auto;
+  color: white;
+  padding: 1rem !important;
+  border-radius: 3rem;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.column{
+  background: rgb(0, 255, 255, 0.6); 
+  width: 19rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+
+.column:hover{
+  background: rgb(0, 255, 255, 0.8); 
+}
+
+.column_medios{
+  margin: 3px 1rem;
+  text-align: center;
+}
+  
+textarea{
+  resize: none;
+}
+
+.form__group {
+  position: relative;
+  padding: 15px;
+  margin-top: 10px;
+}
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid black;
+  outline: 0;
+  font-size: 1.3rem;
+  color: black;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.form__field::placeholder {
+  color: transparent;
+}
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: darkblue
+}
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px; 
+  border-image-slice: 1;
+}
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;  
+}
+
+.logo{
+  width: 35%;
+  height: auto;
+}
+
+
+@media screen and (min-width: 320px) {
+   .column{
+     width: 100%;
+   }
+}
+
+@media screen and (min-width: 481px) {
+  
+}
+
+
+@media screen and (min-width: 769px) {
+   
+}
+
+@media screen and (min-width: 1025px) {
+
+  .contenedor{
+    width: 100%;
+    height: 32rem;
+  }
+
+  h2{
+    margin-top: 1rem;
+  }
+
+  i, h2{
+    font-size: x-large;
+  }
+
+  .flex{
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .column{
+    width: 36rem;
+    margin-left: 1rem;
+  } 
+
+  .column_medios > div{
+    margin: 2rem;
+  }
+
+  .form__group{
+    padding: 1rem 2 rem;
+  }
+
+  form{
+    margin-top: 3rem;
+  }
+
+  .logo{
+    width: 45%;
+  }
+ 
+ 
+}
+
+@media screen and (min-width: 1201px) {
+   
+}
+
+@media screen and (min-width: 1680px) {
+
+  .contenedor{
+    margin: auto;
+    width: 80%;
+  }
+  
+}
+
+@media screen and (min-width: 1900px) {
+  
+}

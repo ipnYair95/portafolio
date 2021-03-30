@@ -1,0 +1,49 @@
+.site-footer
+{
+  background-color:#26272b;
+  padding: 1rem 0rem 1px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+
+.flex {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.font{
+  font-size: medium;
+}
+
+i{
+  margin: 0rem 2rem 2rem;
+}
+
+hr{
+  border-top: 3px solid blue;
+  margin-top: 0rem;
+  margin-bottom: 2rem;
+}
+
+.column{
+  background: rgb(0, 255, 255, 0.6); 
+  width: 19rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+
+@media screen and (min-width: 1025px) {
+  .flex{
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  
+
+  .font{
+    font-size: x-large;
+  }
+
+}

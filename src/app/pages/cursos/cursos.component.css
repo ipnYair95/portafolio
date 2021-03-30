@@ -1,0 +1,64 @@
+.contenedor{
+    padding: 1rem;
+    overflow-x: auto;
+}
+
+.imagen{
+    width: 4rem;
+    height: 2rem;
+}
+
+table{
+    width: 80% !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+mat-tab{
+    font-size: x-large;
+}
+
+
+@media screen and (min-width: 320px) {
+  
+}
+
+@media screen and (min-width: 481px) {
+   
+}
+
+@media screen and (min-width: 769px) {
+
+    .contenedor{
+        padding: 2rem;
+    }
+
+    .imagen{
+        width: 5rem;
+        height: 4rem;
+    }
+ 
+}
+
+@media screen and (min-width: 1025px) {
+ 
+  .flex-container{
+      flex-direction: row;
+  }
+ 
+}
+
+@media screen and (min-width: 1201px) {
+ 
+   
+ 
+}
+
+@media screen and (min-width: 1680px) {
+
+
+}
+
+@media screen and (min-width: 1900px) {
+
+}

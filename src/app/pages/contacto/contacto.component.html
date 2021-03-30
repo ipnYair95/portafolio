@@ -1,0 +1,46 @@
+<div style="margin: 1rem;">
+    <div class="contenedor">
+
+        <div class="flex">
+            <div class="column" style="color: darkblue; background: none;">
+
+                <div style="text-align: center;">
+                    <img class="logo" src="../../../assets/gato.png" alt="">
+                </div> 
+
+            </div>
+            <div class="column">
+
+                <form [formGroup]="forma" >
+
+                    <div class="form__group field">
+                        <input type="input" class="form__field" placeholder="Name" formControlName="correo" />
+                        <label for="name" class="form__label">Email</label>
+                    </div>
+
+                    <div class="form__group field">
+                        <input type="input" class="form__field" placeholder="Name" formControlName="asunto" />
+                        <label for="name" class="form__label">Asunto</label>
+                    </div>
+
+                    <div class="form__group field">
+                        <label for="name" class="form__label">Mensaje - Mínimo 30 carácteres </label>
+                        <textarea class="form__field" formControlName="mensaje" style="margin-top: 1rem;"></textarea>
+                    </div>
+
+                </form>
+
+                <div style="margin: 1rem; text-align: center;">
+
+                    <button (click)="click()" class="btn btn-success" [disabled]="forma.invalid">
+                        <i class="fa fa-paper-plane" aria-hidden="true"> Enviar </i>
+                    </button>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+</div>

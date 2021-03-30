@@ -1,0 +1,111 @@
+<mat-tab-group mat-stretch-tabs>
+    
+    <mat-tab label="Educación">
+        
+        <div class="contenedor">
+
+
+            <table class="table">
+
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col"> Escuela </th>
+                        <th scope="col"> Carrera </th>
+                        <th scope="col"> Año </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let escuela of escuelas; let i = index">
+                        <th> {{ i+1 }} </th>
+                        <th> {{ escuela.nombre }} </th>
+                        <th> {{ escuela.grado }} </th>
+                        <th> {{ escuela.anio }} </th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </mat-tab>
+    <mat-tab label="Cursos">
+
+        <div class="contenedor">
+
+            <table class="table">
+        
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col"> Curso </th>
+                        <th scope="col"> Emisor </th>
+                        <th scope="col"> Año </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let curso of cursos; let i = index">
+                        <td> <b> {{ i+1 }} </b> </td>
+                        <td> {{ curso.curso }} </td>
+                        <td> <img [src]="curso.emisor" class="imagen"> </td>
+                        <td> {{ curso.fecha }} </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </mat-tab>
+</mat-tab-group>
+<!-- 
+<div>
+    <h2 class="text-center"> Educación </h2>
+</div>
+
+<div class="contenedor">
+
+
+    <table class="table">
+
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col"> Escuela </th>
+                <th scope="col"> Carrera </th>
+                <th scope="col"> Año </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let escuela of escuelas; let i = index">
+                <th> {{ i+1 }} </th>
+                <th> {{ escuela.nombre }} </th>
+                <th> {{ escuela.grado }} </th>
+                <th> {{ escuela.anio }} </th>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div>
+    <h2 class="text-center"> Cursos </h2>
+</div>
+
+<div class="contenedor">
+
+    <table class="table">
+
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col"> Curso </th>
+                <th scope="col"> Emisor </th>
+                <th scope="col"> Año </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let curso of cursos; let i = index">
+                <td> <b> {{ i+1 }} </b> </td>
+                <td> {{ curso.curso }} </td>
+                <td> <img [src]="curso.emisor" class="imagen"> </td>
+                <td> {{ curso.fecha }} </td>
+            </tr>
+        </tbody>
+    </table>
+</div> -->
